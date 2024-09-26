@@ -19,7 +19,15 @@ export interface User {
   role: "ADMIN" | "SUPER_ADMIN";
 }
 
-const originalDB = {
+export interface Database {
+  rooms: Room[];
+  messages: Message[];
+  users: User[];
+}
+
+
+
+ const originalDB = {
   rooms: [
     {
       roomId: "okhkUzffzCGMqtfC1uv6x",
